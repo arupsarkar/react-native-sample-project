@@ -1,0 +1,3 @@
+export const COUNTER_CHANGE = 'COUNTER_CHANGE';
+export const DATA_AVAILABLE = 'DATA_AVAILABLE';
+export const ADD_TO_CART = 'ADD_TO_CART';
