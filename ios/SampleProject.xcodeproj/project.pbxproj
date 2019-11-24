@@ -20,6 +20,7 @@
 		4C18815E8667FB26ADB0B85A /* libPods-SampleProject-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B5D342521BC4186E6653FA /* libPods-SampleProject-tvOS.a */; };
 		90F3106263AD25255A086C30 /* libPods-SampleProject-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CDBAF23A112E074D81F611D /* libPods-SampleProject-tvOSTests.a */; };
 		CD0E76C96462B4673952360A /* libPods-SampleProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F4C785BECA45DE1D5E8FF2 /* libPods-SampleProject.a */; };
+		E633E6FA2389E126002FD994 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E633E6F92389E126002FD994 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		B22B21FCBB5A0D8DD42AC6F4 /* Pods-SampleProject-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleProject-tvOS.release.xcconfig"; path = "Target Support Files/Pods-SampleProject-tvOS/Pods-SampleProject-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		BE50A48BF4F22FB92B452606 /* Pods-SampleProject-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleProject-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-SampleProject-tvOSTests/Pods-SampleProject-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E10008FEBD117E3E633B08AF /* libPods-SampleProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SampleProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E633E6F92389E126002FD994 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E8ADB0C37A349311AAF03A19 /* Pods-SampleProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-SampleProjectTests/Pods-SampleProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -125,6 +127,7 @@
 		13B07FAE1A68108700A75B9A /* SampleProject */ = {
 			isa = PBXGroup;
 			children = (
+				E633E6F92389E126002FD994 /* GoogleService-Info.plist */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -194,7 +197,6 @@
 				E8ADB0C37A349311AAF03A19 /* Pods-SampleProjectTests.debug.xcconfig */,
 				A03ECFC0355FC36CD879D11B /* Pods-SampleProjectTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -309,6 +311,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -339,6 +342,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				E633E6FA2389E126002FD994 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +489,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SampleProject/Pods-SampleProject-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
@@ -506,6 +511,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",

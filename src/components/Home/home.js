@@ -20,7 +20,7 @@ import NavigationService from '../Service/NavigationService';
 class Home extends Component {
 
     static navigationOptions = {
-            title : 'Welcome',
+            title : 'Home',
             headerStyle: {
                 backgroundColor: '#4a6dff',
                 shadowColor: 'transparent',
@@ -33,7 +33,7 @@ class Home extends Component {
                     style={styles.button}
                     onPress={async () =>
                     {
-                        await AsyncStorage.clear();
+                        // await AsyncStorage.clear();
                         NavigationService.navigate('SignIn', {userName: 'Lucy'})
                     }
                     } >
